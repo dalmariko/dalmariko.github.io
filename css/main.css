@@ -343,8 +343,12 @@ text-transform: capitalize;
     display: inline-block;
     vertical-align: middle;
     font-size: 50px;
+<<<<<<< HEAD
     color:blue;
 
+=======
+    color:yellow;
+>>>>>>> 4606aeb482ca1fb9e17c4d988828a5964a3fb5e0
  }
 
 .icon-commody::before {
