@@ -343,9 +343,13 @@ text-transform: capitalize;
     display: inline-block;
     vertical-align: middle;
     font-size: 50px;
+<<<<<<< HEAD
 
     color:yellow;
 
+=======
+    color:yellow;
+>>>>>>> conflict yellow fixing
  }
 
 .icon-commody::before {
