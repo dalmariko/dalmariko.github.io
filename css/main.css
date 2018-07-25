@@ -215,8 +215,7 @@ p {
 
 .headerLeft,.headerRight  {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
     font-size: 14px;
 }
@@ -225,12 +224,31 @@ p {
 
 .headerLeft {
    margin-bottom: 1.4em;
-   flex-basis:  70%;
 }
 
-.headerRight  {
-    flex-basis:  30%;
-}
+
+    .headerLeft li,.headerRight li{
+    padding-right: 1.25rem;
+    }
+
+    .headerLeft li:last-of-type,.headerRight li:last-of-type{
+    padding-right: 0;
+    }
+
+    .headerLeft {
+        justify-content: flex-start;
+    }
+
+    .headerLeft li,.headerRight  li {
+   justify-content: space-between;
+   }
+
+
+
+   .headerRight {
+    justify-content: flex-start;
+   }
+
 
 
 
@@ -835,6 +853,7 @@ background-color: transparent;
     }
 
     .headerLeft {
+        flex-basis: 70%;
         justify-content: flex-start;
     }
 
@@ -845,6 +864,7 @@ background-color: transparent;
 
 
    .headerRight {
+    flex-basis: 30%;
     justify-content: flex-end;
    }
 
