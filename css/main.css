@@ -207,30 +207,28 @@ p {
 
 
 .headerFerst .headerRight li:first-of-type {
-    padding-right: 5px;
+    padding-right: .35em;
 }
 
+
+.myRow {
+    display: flex;
+    flex-direction: column;
+}
 
 
 .headerLeft,.headerRight  {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-.headerLeft li,.headerRight li{
- padding-right: 20px;
-}
-
-.headerLeft li:last-of-type,.headerRight li:last-of-type{
- padding-right: 0;
-}
 
 
 .headerLeft {
-   margin-bottom: 20px;
+   margin-bottom: 1.4em;
    flex-basis:  70%;
 }
 
@@ -379,24 +377,17 @@ p {
 
 .gorizontalMenu ul {
    display: flex;
-   justify-content: space-between;
    flex-wrap: wrap;
-}
+   flex-direction: column;
+   align-items: center;
 
-.gorizontalMenu li {    
-    margin-right: 10px;
-}
-
-
-.gorizontalMenu li:last-of-type {
-    margin-right: 0;
 }
 
 
 .gorizontalMenu a {
     display: inline-block;
     vertical-align: middle;
-    font-size: 16px;
+    font-size: 14px;
     border-bottom:3px solid #fff;
 }
 
@@ -825,9 +816,25 @@ background-color: transparent;
     }
 
 
+    .myRow {
+      display: flex;
+      flex-direction: row;
+    }
 
     .headerLeft,.headerRight  {
-        flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    }
+
+
+
+    .headerLeft li,.headerRight li{
+    padding-right: 1.25rem;
+    }
+
+    .headerLeft li:last-of-type,.headerRight li:last-of-type{
+    padding-right: 0;
     }
 
     
@@ -842,9 +849,26 @@ background-color: transparent;
    }
 
     .headerLeft form {
-    margin-left: 20px;
+    margin-left: 1.25rem;
    }
 
+
+
+   .gorizontalMenu ul {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   }
+
+
+
+    .gorizontalMenu a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    border-bottom:3px solid #fff;
+    }
 
 
     footer {
@@ -890,7 +914,17 @@ background-color: transparent;
 }
 
 @media screen and (min-width: 992px) {
-         .subscription button {
+    
+    .headerLeft,.headerRight  {
+    font-size: 16px;
+    }
+
+    .gorizontalMenu a {
+    font-size: 16px;
+    }
+
+
+    .subscription button {
     font-size: 1rem;
     }
 
