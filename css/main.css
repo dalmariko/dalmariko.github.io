@@ -199,7 +199,7 @@ p {
 .headerFerst { 
     background-color: #f0f0f0;
     font-size: 0;
-    padding-top:  10px ; 
+    padding-top:  8px ; 
     padding-bottom: 10px ; 
 } 
 
@@ -224,17 +224,58 @@ p {
 
 
 
+/*
+.headerFerst .headerLeft li,.headerFerst  .headerRight li  {
+       border-bottom: 1px solid transparent;
+}
+
+
+.headerFerst  .headerLeft li:hover,.headerFerst  .headerRight li:hover  {
+       border-bottom: 1px solid #00bea5;
+        transition: .3s ease-in-out ; 
+    }
+*/
+
+
+.headerFerst .headerLeft a:before,.headerFerst  .headerRight a:before  {
+       display: block;
+       width: 0;
+       height: 1px;
+       content: '';
+       background-color: transparent;
+}
+.headerFerst .headerLeft a:after,.headerFerst  .headerRight a:after  {
+       display: block;
+       width: 0;
+       height: 1px;
+       content: '';
+       background-color: transparent;
+}
+
+
+.headerFerst  .headerLeft a:hover:after,.headerFerst  .headerRight a:hover:after  {
+        display: block;
+        width: 100%;
+        height: 1px;
+        content: '';
+        background-color: #00bea5;
+        transition: width .3s ease-in-out ; 
+    }
+
+
+
+
     .headerLeft {
    margin-bottom: 1.4em;
     }
 
 
     .headerLeft li,.headerRight li{
-    padding-right: 1.25rem;
+    margin-right: 1.25rem;
     }
 
     .headerLeft li:last-of-type,.headerRight li:last-of-type{
-    padding-right: 0;
+    margin-right: 0;
     }
 
 
@@ -381,7 +422,7 @@ p {
         width: 0;
         height: 2px;
         content: '';
-        background-color: transparent;
+        background-color: #00bea5;
     }
 
     .gorizontalMenu a:hover:after {
@@ -389,7 +430,6 @@ p {
         width: 100%;
         height: 2px;
         content: '';
-        background-color: #00bea5;
         transition: width .3s ease-in ; 
     }
 
@@ -823,21 +863,12 @@ background-color: transparent;
 
 
     .headerLeft,.headerRight  {
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
     font-size: 14px;
     }
-
-
-
-    .headerLeft li,.headerRight li{
-    padding-right: 1.25rem;
-    }
-
-    .headerLeft li:last-of-type,.headerRight li:last-of-type{
-    padding-right: 0;
-    }
-
 
 
 
