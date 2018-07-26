@@ -243,6 +243,8 @@ p {
        height: 1px;
        content: '';
        background-color: transparent;
+        
+    
 }
 .headerFerst .headerLeft a:after,.headerFerst  .headerRight a:after  {
        display: block;
@@ -278,18 +280,25 @@ p {
     margin-right: 0;
     }
 
+/*
 
-.headerLeft li::first-letter {
-    text-transform: capitalize;
-}
-
-
-.headerRight  li:nth-of-type(3),.headerRight li:nth-of-type(4)  {
+.headerLeft li,.headerRight li  {
     text-transform: uppercase;
 }
 
+
+
+.headerRight li,.headerRight li  {
+    text-transform: uppercase;
+}*/
+
+.headerLeft li {
+    /*text-transform: capitalize;*/
+}
+
 .headerRight li::first-letter {
-    text-transform: capitalize; 
+    /*text-transform: capitalize; */
+    text-transform: uppercase;
 }
 
 
