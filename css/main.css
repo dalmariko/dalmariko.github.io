@@ -224,17 +224,19 @@ p {
 
 
 
-/*
-.headerFerst .headerLeft li,.headerFerst  .headerRight li  {
-       border-bottom: 1px solid transparent;
+
+ .headerLeft  span,.headerRight  span{
+    display: block;
+ }
+
+ .headerLeft  span::first-letter, .headerRight  span::first-letter {
+    text-transform: uppercase; 
 }
 
 
-.headerFerst  .headerLeft li:hover,.headerFerst  .headerRight li:hover  {
-       border-bottom: 1px solid #00bea5;
-        transition: .3s ease-in-out ; 
-    }
-*/
+.headerRight li:nth-of-type(2) span,.headerRight li:nth-of-type(3) span  {
+    text-transform: uppercase;
+}
 
 
 .headerFerst .headerLeft a:before,.headerFerst  .headerRight a:before  {
@@ -244,6 +246,8 @@ p {
        content: '';
        background-color: transparent;
 }
+
+
 .headerFerst .headerLeft a:after,.headerFerst  .headerRight a:after  {
        display: block;
        width: 0;
@@ -274,23 +278,13 @@ p {
     margin-right: 1.25rem;
     }
 
-    .headerLeft li:last-of-type,.headerRight li:last-of-type{
+    .headerLeft li:last-of-type,.headerRight li:last-of-type {
     margin-right: 0;
     }
 
 
-.headerLeft li::first-letter {
-    text-transform: capitalize;
-}
 
 
-.headerRight  li:nth-of-type(3),.headerRight li:nth-of-type(4)  {
-    text-transform: uppercase;
-}
-
-.headerRight li::first-letter {
-    text-transform: capitalize; 
-}
 
 
 
