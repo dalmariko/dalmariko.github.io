@@ -303,14 +303,15 @@ p {
     font-size: 40px;
 }
 
-.headerLeft form {
+.headerLeft  form {
    display: flex;
    flex-direction: row;
     align-items: center;
     font-size: 0;
-        border: 1px solid #cdd1d0;
-         padding: 0 8px;
-            min-height: 35px;
+    min-width: 100%;
+    border: 1px solid #cdd1d0;
+    padding: 0 8px;
+    min-height: 35px;
 }
 
 
@@ -319,7 +320,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-        background-color: transparent;
+    flex-basis: 90%;
+    background-color: transparent;
     color: #000;
     font-size: 16px;
 }
@@ -349,7 +351,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: flex-end; 
-        background-color: transparent;   
+    flex-basis: 10%;
+    background-color: transparent;   
     font-size: 16px;
     cursor: pointer;
 }
