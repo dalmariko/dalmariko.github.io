@@ -387,9 +387,10 @@ p {
 
 
 .toggleBtn{
+    position: absolute;
+    right: 15px;
     width: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    top: 51px;
 }
 
 .toggleBtn:after {
@@ -425,6 +426,7 @@ p {
     padding-top: 13px;
     padding-bottom: 13px;
 }
+
 
 
 .gorizontalMenu ul {
@@ -839,7 +841,17 @@ background-color: transparent;
 
 @media screen and (min-width: 480px) {
 
-    
+.toggleBtn{
+    position: static;
+    width: 30px;
+}
+
+    .headerLeft form {
+    margin-left: .5rem;
+   }
+
+
+
     footer {
         padding-top: 1.5rem;
         padding-bottom: 1rem;
@@ -865,13 +877,24 @@ background-color: transparent;
 
 @media screen and (min-width: 768px){
 
+
+
+
+
+    
+.toggleBtn{
+    position: static;
+    margin: 0 8px;
+}
+
+.headerBottom {
+    position: static;
+}
+
     .mobileMenu {
         display: none;
     }
 
-    .toggleBtn {
-        display: none;
-    }
 
     .top .content p {
         text-align: left;   
@@ -1002,12 +1025,11 @@ background-color: transparent;
 @media screen and (max-width: 1200px) {    
 .headerBottom {
     display: none;
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 100%;
     left: 0;
     z-index: 2;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 }
