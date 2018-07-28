@@ -218,6 +218,7 @@ p {
 .headerLeft,.headerRight  {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     font-size: 14px;
@@ -272,7 +273,7 @@ p {
 
 
 
-    .headerLeft {
+    .headerLeft,.headerRight  {
    margin-bottom: 1.4em;
     }
 
@@ -291,7 +292,6 @@ p {
 .headerSecond {
     font-size: 0;
     padding-top:  22px;
-    padding-bottom: 22px;
     border-bottom:  1px solid #cdd1d0;
 }
 
@@ -387,9 +387,9 @@ p {
 
 
 .toggleBtn{
-    position: absolute;
-    right:  5px;
     width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .toggleBtn:after {
@@ -838,6 +838,7 @@ background-color: transparent;
 
 
 @media screen and (min-width: 480px) {
+
     
     footer {
         padding-top: 1.5rem;
@@ -869,7 +870,7 @@ background-color: transparent;
     }
 
     .toggleBtn {
-        /*display: none;*/
+        display: none;
     }
 
     .top .content p {
@@ -880,9 +881,12 @@ background-color: transparent;
         margin-left: 15px;
     }
 
+.headerSecond {
+    padding-bottom: 22px;
+}
 
 
-    .headerLeft {
+    .headerLeft,.headerRight {
         margin-bottom: 0;
     }
 
