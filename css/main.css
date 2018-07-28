@@ -184,7 +184,6 @@ p {
 
 
 .box {
-    margin-bottom: 66px;
     border-bottom: 1px solid #cdd1d0;
 }
 
@@ -422,11 +421,17 @@ p {
 
 
 
-.headerBottom {
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
 
+.headerBottom {
+    display: none;
+    position: relative;
+     padding-top: 13px;
+    padding-bottom: 13px;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    background-color: #fff;
+}
 
 
 .gorizontalMenu ul {
@@ -485,7 +490,9 @@ p {
     margin-right: auto;
 }
 
-
+.headText {
+    padding-top: 60px;
+}
 
 .headText h1,
 h2,
@@ -546,13 +553,19 @@ padding-bottom: 40px;
 
  
 .elements {
-    padding-top: 70%;
+    padding-top: 75%;
     margin-bottom: 30px;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+
+.middle .elements {
+    margin-right: 0;
+    margin-left:0;
 }
 
 
@@ -879,15 +892,33 @@ background-color: transparent;
 
 
 
+.headerBottom {
+    display:block;
+    position: relative;
+     padding-top: 13px;
+    padding-bottom: 13px;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    background-color: #fff;
+}
+
 
 
     
 .toggleBtn{
+
+    display: none;
     position: static;
     margin: 0 8px;
 }
 
+
+
+
+
 .headerBottom {
+    display: block;
     position: static;
 }
 
@@ -1021,15 +1052,3 @@ background-color: transparent;
 
 
 
- 
-@media screen and (max-width: 1200px) {    
-.headerBottom {
-    display: none;
-    position: relative;
-    width: 100%;
-    left: 0;
-    z-index: 2;
-    background-color: #fff;
-}
-
-}
