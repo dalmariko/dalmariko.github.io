@@ -214,7 +214,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     }
 
 
@@ -226,7 +226,6 @@ p {
     flex-wrap: wrap;
     font-size: 14px;
     }
-
 
 
 
@@ -858,11 +857,6 @@ background-color: transparent;
 
 @media screen and (min-width: 480px) {
 
-.toggleBtn{
-    position: static;
-    width: 30px;
-}
-
     .headerLeft form {
     margin-left: .5rem;
    }
@@ -884,17 +878,6 @@ background-color: transparent;
     font-size: .7rem;
     }
 
-}
-
-
-
-
-
-
-
-@media screen and (min-width: 768px){
-
-
 
 .headerBottom {
     display:block;
@@ -909,11 +892,23 @@ background-color: transparent;
 
 
 
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+
+
+
+
     
 .toggleBtn{
-
     display: none;
-    position: static;
     margin: 0 8px;
 }
 
