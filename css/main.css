@@ -309,7 +309,6 @@ p {
     font-size: 0;
     min-width: 100%;
     border: 1px solid #cdd1d0;
-    padding: 0 8px;
     min-height: 35px;
 }
 
@@ -322,6 +321,7 @@ p {
     flex-basis: 90%;
     background-color: transparent;
     color: #000;
+    padding-left: 8px;
     font-size: 16px;
 }
 
@@ -353,6 +353,7 @@ p {
     flex-basis: 10%;
     background-color: transparent;   
     font-size: 16px;
+    padding-right: 8px;
     cursor: pointer;
 }
 
@@ -857,9 +858,6 @@ background-color: transparent;
 
 @media screen and (min-width: 480px) {
 
-    .headerLeft form {
-    margin-left: .5rem;
-   }
 
 
 
