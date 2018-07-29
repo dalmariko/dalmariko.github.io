@@ -9,13 +9,13 @@ function myW(){
 
 
 if ($(window).width()<768) {
-			$('.headerSecond ul.headerRight').appendTo('.mobileMenuRight');
-			$('.headerFerst  ul.headerLeft').appendTo('.mobileMenuLeft');
-			$('.headerFerst  ul.headerRight').appendTo('.mobileMenuLeft');
+			$('#hsr').appendTo('.mobileMenuRight');
+			$('#hfl').appendTo('.mobileMenuLeft');
+			$('#hfr').appendTo('.mobileMenuLeft');
 }else {
-			$('.mobileMenuLeft  .headerLeft').appendTo('.headerFerst  .myRow');
-			$('.mobileMenuLeft  .headerRight').appendTo('.headerFerst  .myRow');
-			$('.mobileMenuRight  .headerRight').appendTo('.headerSecond  .myRow');
+			$('#hfl').appendTo('.headerFerst  .myRow');
+			$('#hfr').appendTo('.headerFerst  .myRow');
+			$('#hsr').appendTo('.headerSecond  .myRow');
 	  }
     };
 
