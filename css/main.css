@@ -214,14 +214,12 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*align-items: center;*/
     }
 
 
 .headerLeft,.headerRight  {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     font-size: 14px;
@@ -476,6 +474,30 @@ p {
 .gorizontalMenu a::first-letter {
     text-transform: capitalize;
 }
+
+
+
+.mobileMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.mobileMenuLeft {
+display: inline-block;
+vertical-align: top;
+width: 80%;
+}
+
+
+.mobileMenuRight {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+
+
+
 
 /*-------------------------------------------------------------slider----------------------------------------------*/
 
@@ -951,7 +973,6 @@ background-color: transparent;
 
     .headerLeft,.headerRight  {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
     font-size: 14px;
