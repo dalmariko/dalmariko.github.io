@@ -27,9 +27,9 @@ $(window).trigger('resize');
 
 
 
-	$('.toggleBtn').on('click',function(){
+$('.toggleBtn').on('click',function(){
 		$('.headerBottom').slideToggle();
-	});
+});
 
 
 
