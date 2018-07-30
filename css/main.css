@@ -434,7 +434,7 @@ p {
 
 .headerBottom {
     display: none;
-    position: relative;
+    position: absolute;
      padding-top: 13px;
     padding-bottom: 13px;
     width: 100%;
@@ -908,16 +908,7 @@ background-color: transparent;
     }
 
 
-.headerBottom {
-    display:block;
-    position: relative;
-     padding-top: 13px;
-    padding-bottom: 13px;
-    width: 100%;
-    left: 0;
-    z-index: 2;
-    background-color: #fff;
-}
+
 
 
 
@@ -932,7 +923,11 @@ background-color: transparent;
 @media screen and (min-width: 768px){
 
 
-
+.headText .content {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
 .icon-poccet,.icon-hert {

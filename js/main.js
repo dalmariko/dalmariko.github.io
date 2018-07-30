@@ -5,36 +5,31 @@ $(function(){
 	});
 
 
-function myW(){
+	  
 
 
+
+$(window).on('resize', function(){
 if ($(window).width()<768) {
 			$('#hsr').appendTo('.mobileMenuRight');
 			$('#hfl').appendTo('.mobileMenuLeft');
 			$('#hfr').appendTo('.mobileMenuLeft');
+			$('.headerBottom').slideUp();
 }else {
 			$('#hfl').appendTo('.headerFerst  .myRow');
 			$('#hfr').appendTo('.headerFerst  .myRow');
 			$('#hsr').appendTo('.headerSecond  .myRow');
+			$('.headerBottom').slideDown();
 	  }
-    };
+});
 
-$(window).on('load resize',myW);
+$(window).trigger('resize');
+
+
 
 	$('.toggleBtn').on('click',function(){
 		$('.headerBottom').slideToggle();
 	});
-
-	
-
-
-
-
-
-
-
-
-
 
 
 
