@@ -167,7 +167,7 @@ a:hover {
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus
+input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus,
@@ -220,8 +220,21 @@ p {
 .box:last-of-type {
     border-bottom: none;
 }
-
-
+#showScroll{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+background-color: #ee2a7b;
+    color: #000000;
+    font-size: 25px;
+    z-index: 100;
+}
+.noscroll{
+    overflow: hidden;
+}
+.esscroll{
+    overflow: auto;
+}
 /*----------------------------------------------header-----------------------------------------------------------*/
 
 
@@ -864,7 +877,7 @@ footer {
 .broduce:hover {
     border-bottom: 1px solid #7f7f7f;
     color: #7f7f7f;
-    transition: color background-color .3s;
+    transition: color, background-color .3s;
 }
 
 
