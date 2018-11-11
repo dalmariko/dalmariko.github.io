@@ -33,18 +33,6 @@ $(function () {
 //TODO По истичению счетчика включить скрол
 
 
-    const slickSlider = document.querySelector('.slick-slider');
-
-    /*
-    window.addEventListener('scroll', e => {
-        // window.pageYOffset=0;
-        // document.body.overflow = 'hidden';
-        // document.body.style.overflow = 'auto';
-
-        // window.scrollTo(0, 0); //рабочий вариант
-
-    });
-    */
 
     let maxSliders = document.querySelectorAll('[data-slick-index]').length - 1;
     console.log(maxSliders);
@@ -54,15 +42,7 @@ $(function () {
         document.body.style.overflow = 'hidden';
     });
 
-
-
-
-    let  options = {
-        attributeFilter:['class']
-        };
-
    let activeSlider = document.querySelector('.slick-active');
-
 
     activeSlider.addEventListener('movemouse', e => {
         let id = e.target.closest("[data-slick-index]").dataset.slickIndex;
