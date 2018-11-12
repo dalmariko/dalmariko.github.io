@@ -4,8 +4,8 @@ $(function () {
         arrows: false,
         dots: true,
         infinite: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
     });
 
 
@@ -28,12 +28,6 @@ $(function () {
     });
 
 
-//TODO Запретить скролл
-//TODO Считать колличество слайдов
-//TODO По истичению счетчика включить скрол
-
-
-
     let maxSliders = document.querySelectorAll('[data-slick-index]').length - 1;
     console.log(maxSliders);
 
@@ -42,17 +36,17 @@ $(function () {
         document.body.style.overflow = 'hidden';
     });
 
-   let activeSlider = document.querySelector('.slick-active');
+    let activeSlider = document.querySelector('.slick-active');
+    let slickSlider = document.querySelector('.slick-list');
 
-    activeSlider.addEventListener('movemouse', e => {
-        let id = e.target.closest("[data-slick-index]").dataset.slickIndex;
 
-        console.log(maxSliders, id * 1);
+    slickSlider.addEventListener('click', e => {
+            let id = e.target.closest("[data-slick-index]").dataset.slickIndex;
+            if (maxSliders === id * 1) {
+                document.body.style.overflow = 'auto';
+                console.log('last slider')
+            }
 
-        if (maxSliders === id * 1) {
-            document.body.style.overflow = 'auto';
-            console.log('last slider')
-        }
     });
 
 
